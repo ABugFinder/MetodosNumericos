@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/caso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="2dp" />
+
+    <TextView
+        android:id="@+id/textViewFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22sp"
+        android:text="Escribe la formula: "
+        android:textColor="#000" />
+
+    <CheckBox
+        android:id="@+id/checkboxCuadratica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="53sp"
+        android:layout_marginEnd="53sp"
+        android:text="Cúbica"
+        android:checked="true"/>
+
+    <TextView
+        android:id="@+id/texViewXpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="153sp"
+        android:layout_marginTop="106sp"
+        android:text="X"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewXDependiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_marginStart="250sp"
+        android:layout_marginTop="110sp"
+        android:layout_marginEnd="-241sp"
+        android:text="X"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView_RangoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="142sp"
+        android:text="Rango a = "
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextRangoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="125sp"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/textView_RangoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8sp"
+        android:layout_marginTop="176sp"
+        android:text="Rango b = "
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextRangoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80sp"
+        android:layout_marginTop="156sp"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/textView_AproxA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130sp"
+        android:layout_marginTop="142sp"
+        android:text="Aprox A = "
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextAproxA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="125sp"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/textView_AproxB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130sp"
+        android:layout_marginTop="176sp"
+        android:text="Aprox B = "
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editTextAproxB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200sp"
+        android:layout_marginTop="156sp"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/textView_SeleccionaMetodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205sp"
+        android:text="Selecciona un metétodo"
+        android:textColor="#000"
+        android:textSize="19sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="245sp">
+
+        <RadioButton
+            android:id="@+id/radioButton_Biseccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biseccion"
+            android:checked="true" />
+        <RadioButton
+            android:id="@+id/radioButton_FalsaPos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Falsa Posición"/>
+        <RadioButton
+            android:id="@+id/radioButton_Newton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Newton Raphson"/>
+        <RadioButton
+            android:id="@+id/radioButton_Secante"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Secante" />
+        <RadioButton
+            android:id="@+id/radioButton_PuntoFijo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Punto Fijo"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_Calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="85sp"
+        android:layout_marginBottom="26sp"
+        android:background="#990"
+        android:text="Calcular"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/button_Graficar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="200sp"
+        android:layout_marginBottom="26sp"
+        android:background="#990"
+        android:text="Graficar"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editTextNumPot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="88dp"
+        android:ems="2"
+        android:inputType="textShortMessage" />
+
+    <TextView
+        android:id="@+id/textViewNumElevaX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="90dp"
+        android:text="3"
+        android:textColor="#000"/>
+
+    <EditText
+        android:id="@+id/editTextNumValX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="199dp"
+        android:layout_marginTop="91dp"
+        android:ems="2"
+        android:inputType="textShortMessage" />
+
+    <EditText
+        android:id="@+id/editTextNumValSolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="296dp"
+        android:layout_marginTop="89dp"
+        android:ems="2"
+        android:inputType="textShortMessage" />
+
+</RelativeLayout>
